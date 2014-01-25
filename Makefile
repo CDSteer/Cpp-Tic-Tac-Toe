@@ -1,7 +1,11 @@
-ifdef SystemRoot
-    OUTPUT = Tic-Tac-Toe.exe
+ifdef SYSTEMROOT
+	OUTPUT = Tic-Tac-Toe.exe
 else
-    OUTPUT = Tic-Tac-Toe
+	ifdef SystemRoot
+	    OUTPUT = Tic-Tac-Toe.exe
+	else
+	    OUTPUT = Tic-Tac-Toe
+	endif
 endif
 
 all:
