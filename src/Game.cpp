@@ -1,7 +1,7 @@
 #include <iostream>
 #include <array>
 #include "Game.h"
-#include "console/console.h"
+#include "../console/console.h"
 
 using namespace std;
 
