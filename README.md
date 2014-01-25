@@ -6,7 +6,7 @@ A terminal version of tic tac toe I am making to learn c++.
 ## Compile
 Once downloaded navigate to the folder in terminal/cmd and enter:
 
-    $ make makefile
+    $ make
 
 ## Running
 Once the makefile is finished run compiling the program:
