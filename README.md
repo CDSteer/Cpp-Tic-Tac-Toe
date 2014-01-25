@@ -9,10 +9,12 @@ Once downloaded navigate to the folder in terminal/cmd and enter:
     $ make makefile
 
 ## Running
-One the makefile is finished run:
+Once the makefile is finished run compiling the program:
  
     $ ./Tic-Tac-Toe
 
 Or run the exactable from your file browser.
+
+## Credits
 
 The console manipulation functions were created by user [Yasahiro](https://github.com/Yasahiro) and can be found [here](https://github.com/Yasahiro/console). They are cross-platform are really useful.
