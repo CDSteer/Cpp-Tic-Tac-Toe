@@ -12,3 +12,7 @@
 *.la
 *.a
 .DS_Store
+
+CMakeCache.txt
+
+CMakeFiles/cmake.check_cache
