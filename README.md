@@ -13,4 +13,6 @@ One the makefile is finished run:
  
     $ ./Tic-Tac-Toe
 
+Or run the exactable from your file browser.
+
 The console manipulation functions were created by user [Yasahiro](https://github.com/Yasahiro) and can be found [here](https://github.com/Yasahiro/console). They are cross-platform are really useful.
