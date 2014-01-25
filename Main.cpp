@@ -1,42 +1,21 @@
 #include <iostream>
 #include "console/console.h"
-#include "Grid.h"
+#include "Game.h"
 
 using namespace std;
 
-int numInput(){
-  int input;
-  bool error = true;
-  while (error){
-    try{
-      cin >> input;
-      if (cin.fail()) throw input;
-      if (input < 0) throw input;
-      if (input >= 9) throw input;
-      error = false;
-    } catch (...) {
-      cout << "Enter a number from the grid!!" << "\n";
-      cin.clear();
-      cin.get();
-      error = true;
-    }
-  }
-  return input;
-}
-
 int main(){
-  char turn = 'X';
+  Game game = Game();
+  int move;
+  bool win = false;
   clrscr();
-  Grid grid = Grid();
-  grid.drawGrid();
-  int num;
-  cout << "X: ";
-  num = numInput();
-  grid.gridAdd(turn, num);
-
-  turn = 'O';
-  cout << "O: ";
-  num = numInput();
-  grid.gridAdd(turn, num);
+  game.drawGrid();
+  bool running = game.isRunning();
+  while (running) {
+    move = game.getMove();
+    game.gridAdd(move);
+    running = game.isRunning();
+  }
+  gotoxy(0,0);
 	return 0;
 }
