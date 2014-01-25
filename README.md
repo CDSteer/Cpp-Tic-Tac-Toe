@@ -3,12 +3,12 @@ Cpp-Tic-Tac-Toe
 
 A terminal version of tic tac toe I am making to learn c++.
 
-# Compile
+## Compile
 Once downloaded navigate to the folder in terminal/cmd and enter:
 
     $ make makefile
 
-# Running
+## Running
 One the makefile is finished run:
  
     $ ./Tic-Tac-Toe
