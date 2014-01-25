@@ -48,7 +48,6 @@ void Game::gridAdd(int box){
       cout << "Draw!!";
     }
     grid[box-1] = turn;
-    clrscr();
     drawGrid();
     if (turnCout >= 3 ) {
       bool win = hasWon();
